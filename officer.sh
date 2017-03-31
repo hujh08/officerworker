@@ -117,7 +117,7 @@ do
         break
     fi
 
-    echo -n '    send exit to '
+    echo -n '    exit '
     msgworker=(`mrcvFrom -p $msgp $brcv`)
     if [ x"${msgworker[0]}" == x"woker" ]
     then
