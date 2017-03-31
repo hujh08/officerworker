@@ -1,6 +1,6 @@
 #!/bin/bash
 
-msgp=$(dirname $(absname $0))/officer.sh
+msgp=$(dirname $(absname $0))/officer
 
 TEMP=`getopt -o p:\
              --long "path:"\
