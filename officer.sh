@@ -123,9 +123,10 @@ do
     then
         wid=${msgworker[1]}
 
-        echo "worker $wid"
+        echo -n "worker $wid. "
         msendTo -p $msgp $wid "exit"
         ((numwNow--))
+        echo "$numwNow workers survive"
     fi
 done
 
